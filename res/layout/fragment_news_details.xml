@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailedMainNewsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newsDetailsFragment"
+    android:background="@color/white"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logoHeadlineImage"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:src="@drawable/abc_logo_long" />
+
+        <TextView
+            android:id="@+id/detailedNewsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detailed News Heading"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/detailedNewsBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5sp"
+            android:text="This is the body of the news story...." />
+
+        <Button
+            android:id="@+id/closeFragmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Page"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/relatedStoriestextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Related Stories"
+            android:padding="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newsFragmentRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</FrameLayout>
